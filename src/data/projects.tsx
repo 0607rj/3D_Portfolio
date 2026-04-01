@@ -236,259 +236,406 @@ export type Project = {
 };
 const projects: Project[] = [
   {
-    id: "codingducks",
-    category: "Coding platform",
-    title: "Coding Ducks",
-    src: "/assets/projects-screenshots/codingducks/landing.png",
-    screenshots: ["landing.png"],
+    id: "talentbridge",
+    category: "Job Portal & Career Platform",
+    title: "TalentBridge",
+    src: "/assets/projects-screenshots/portfolio/landing.png",
+    screenshots: [],
     skills: {
       frontend: [
-        PROJECT_SKILLS.ts,
-        PROJECT_SKILLS.next,
-        PROJECT_SKILLS.chakra,
-        PROJECT_SKILLS.reactQuery,
-        PROJECT_SKILLS.firebase,
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.tailwind,
+        PROJECT_SKILLS.js,
       ],
       backend: [
         PROJECT_SKILLS.node,
         PROJECT_SKILLS.express,
-        PROJECT_SKILLS.prisma,
-        PROJECT_SKILLS.python,
-        PROJECT_SKILLS.postgres,
-        PROJECT_SKILLS.sockerio,
+        PROJECT_SKILLS.mongo,
       ],
     },
-    live: "https://www.codingducks.xyz/",
-    github: "https://github.com/0607rj/Coding-Ducks",
+    live: "",
+    github: "",
     get content() {
       return (
         <div>
-          <TypographyP className="font-mono text-2xl text-center">
-            Coding ducks = LeetCode + CodePen + CSS Battles
+          <TypographyP className="font-mono text-2xl text-center mb-4">
+            Your All-in-One Career Companion 🚀
           </TypographyP>
-          <TypographyP className="font-mono ">
-            Coding Ducks is your coding dojo — where you level up your skills,
-            battle in real-time code duels, and earn badges like a true code
-            warrior. Track your progress, flex your brain, and climb the
-            leaderboard. Ready to quack the code?
+          <TypographyP className="font-mono">
+            TalentBridge is a comprehensive job portal that goes beyond traditional job listings. 
+            Built with the MERN stack, it offers resume building, gap analysis, resume evaluation, 
+            mock tests, and live video call interviews all in one platform.
           </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
-          <TypographyH3 className="my-4 mt-8">Problems </TypographyH3>
-          <p className="font-mono mb-2">
-            Solve coding problems similar to LeetCode, enhancing your
-            problem-solving skills across various languages.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/codingducks/problems.png`,
-              `${BASE_PATH}/codingducks/problem.png`,
-            ]}
-          />
-          <TypographyH3 className="my-4 mt-8">Ducklets</TypographyH3>
-          <p className="font-mono mb-2">
-            Collaborate in real-time with others in a multiplayer coding
-            environment, just like CodePen but with a social twist.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/codingducks/ducklets.png`,
-              `${BASE_PATH}/codingducks/ducklet1.png`,
-              `${BASE_PATH}/codingducks/ducklet2.png`,
-            ]}
-          />
-          <TypographyH3 className="my-4 mt-8">UI Battles </TypographyH3>
+          {this.live && <ProjectsLinks live={this.live} repo={this.github} />}
+          
+          <TypographyH3 className="my-4 mt-8">Key Features</TypographyH3>
+          <ul className="list-disc ml-6 space-y-2">
+            <li className="font-mono">
+              <strong>Smart Resume Builder:</strong> Create professional resumes with AI-powered suggestions
+            </li>
+            <li className="font-mono">
+              <strong>Gap Analysis:</strong> Identify skill gaps and get personalized learning recommendations
+            </li>
+            <li className="font-mono">
+              <strong>Resume Analyzer:</strong> Get instant feedback on your resume's strengths and weaknesses
+            </li>
+            <li className="font-mono">
+              <strong>Mock Interviews:</strong> Practice with AI-driven mock tests before the real thing
+            </li>
+            <li className="font-mono">
+              <strong>Live Video Interviews:</strong> Conduct or attend video call interviews directly on the platform
+            </li>
+            <li className="font-mono">
+              <strong>Job Matching:</strong> Smart algorithm matches candidates with relevant opportunities
+            </li>
+          </ul>
 
-          <p className="font-mono mb-2">
-            Challenge yourself to create UI components with HTML/CSS/JS, and get
-            instant feedback with an automated similarity scoring.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/codingducks/css-battles.png`,
-              `${BASE_PATH}/codingducks/css-battle.png`,
-              `${BASE_PATH}/codingducks/css-battle2.png`,
-            ]}
-          />
-          <TypographyH3 className="my-4 mt-8">Contests </TypographyH3>
-          <p className="font-mono mb-2">
-            Organize or participate in coding competitions. Successfully used to
-            host three contests during college.
-          </p>
-          <SlideShow images={[`${BASE_PATH}/codingducks/contests.png`]} />
-          <TypographyH3 className="my-4 mt-8">Playground </TypographyH3>
-          <p className="font-mono mb-2">
-            Test and execute your code instantly in my versatile online code
-            runner.
-          </p>
-          <SlideShow images={[`${BASE_PATH}/codingducks/playground.png`]} />
-          <TypographyH3 className="my-4 mt-8">Users</TypographyH3>
-
-          <p className="font-mono mb-2">
-            Track your progress, earn badges, and climb the rankings with
-            detailed user profiles and activity tracking.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/codingducks/users.png`,
-              `${BASE_PATH}/codingducks/user.png`,
-            ]}
-          />
+          <TypographyH3 className="my-4 mt-8">Tech Highlights</TypographyH3>
+          <ul className="list-disc ml-6 space-y-2">
+            <li className="font-mono">Real-time video calling integration</li>
+            <li className="font-mono">AI-powered resume analysis and recommendations</li>
+            <li className="font-mono">Secure authentication and user management</li>
+            <li className="font-mono">Responsive design for seamless mobile experience</li>
+          </ul>
         </div>
       );
     },
   },
   {
-    id: "couponluxury",
-    category: "Coupon site",
-    title: "Coupon Luxury",
-    src: "/assets/projects-screenshots/couponluxury/landing.png",
-    screenshots: ["1.png", "2.png", "3.png", "4.png", "5.png"],
-    live: "https://www.couponluxury.com/",
+    id: "ecodrive",
+    category: "Carpooling & Sustainability",
+    title: "EcoDrive",
+    src: "/assets/projects-screenshots/portfolio/landing.png",
+    screenshots: [],
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.tailwind,
+        PROJECT_SKILLS.js,
+      ],
+      backend: [
+        PROJECT_SKILLS.node,
+        PROJECT_SKILLS.express,
+        PROJECT_SKILLS.mongo,
+      ],
+    },
+    live: "",
+    github: "",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono text-2xl text-center mb-4">
+            Share Rides, Save Money, Save the Planet 🌍🚗
+          </TypographyP>
+          <TypographyP className="font-mono">
+            EcoDrive is a modern carpooling platform that connects commuters heading in the same direction. 
+            Built with the MERN stack, it makes ride-sharing easy, affordable, and eco-friendly.
+          </TypographyP>
+          {this.live && <ProjectsLinks live={this.live} repo={this.github} />}
+          
+          <TypographyH3 className="my-4 mt-8">Key Features</TypographyH3>
+          <ul className="list-disc ml-6 space-y-2">
+            <li className="font-mono">
+              <strong>Smart Ride Matching:</strong> Find or offer rides based on your route and schedule
+            </li>
+            <li className="font-mono">
+              <strong>Real-time Tracking:</strong> Track your ride and estimated arrival time
+            </li>
+            <li className="font-mono">
+              <strong>User Profiles & Ratings:</strong> Build trust through verified profiles and reviews
+            </li>
+            <li className="font-mono">
+              <strong>Cost Splitting:</strong> Automatic fare calculation and split among passengers
+            </li>
+            <li className="font-mono">
+              <strong>Environmental Impact:</strong> Track your CO2 savings and contribution to sustainability
+            </li>
+            <li className="font-mono">
+              <strong>Safety Features:</strong> Emergency contacts, ride verification, and safety guidelines
+            </li>
+          </ul>
+
+          <TypographyH3 className="my-4 mt-8">Impact</TypographyH3>
+          <p className="font-mono">
+            EcoDrive promotes sustainable transportation by reducing the number of vehicles on the road, 
+            lowering carbon emissions, and making commutes more affordable for everyone.
+          </p>
+        </div>
+      );
+    },
+  },
+  {
+    id: "notesforge",
+    category: "AI-Powered Education",
+    title: "NotesForge",
+    src: "/assets/projects-screenshots/portfolio/landing.png",
+    screenshots: [],
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.tailwind,
+        PROJECT_SKILLS.js,
+      ],
+      backend: [
+        PROJECT_SKILLS.node,
+        PROJECT_SKILLS.express,
+        PROJECT_SKILLS.mongo,
+      ],
+    },
+    live: "",
+    github: "",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono text-2xl text-center mb-4">
+            AI-Generated Exam Notes in Seconds 📚✨
+          </TypographyP>
+          <TypographyP className="font-mono">
+            NotesForge is an AI-powered exam notes generator that uses Google's Gemini API to create 
+            comprehensive, well-structured study notes from any topic. Built with the MERN stack, 
+            it's your study companion for last-minute exam prep.
+          </TypographyP>
+          {this.live && <ProjectsLinks live={this.live} repo={this.github} />}
+          
+          <TypographyH3 className="my-4 mt-8">Key Features</TypographyH3>
+          <ul className="list-disc ml-6 space-y-2">
+            <li className="font-mono">
+              <strong>Gemini AI Integration:</strong> Leverages Google's Gemini API for intelligent note generation
+            </li>
+            <li className="font-mono">
+              <strong>Topic Customization:</strong> Generate notes for specific subjects, topics, or chapters
+            </li>
+            <li className="font-mono">
+              <strong>Smart Formatting:</strong> Notes are automatically formatted with headers, bullet points, and highlights
+            </li>
+            <li className="font-mono">
+              <strong>Save & Organize:</strong> Save your generated notes and organize them by subject
+            </li>
+            <li className="font-mono">
+              <strong>Export Options:</strong> Download notes as PDF or share them with classmates
+            </li>
+            <li className="font-mono">
+              <strong>Quick Summaries:</strong> Get concise summaries for quick revision
+            </li>
+          </ul>
+
+          <TypographyH3 className="my-4 mt-8">How It Works</TypographyH3>
+          <p className="font-mono mb-4">
+            Simply enter your topic or upload study material, and NotesForge's AI will analyze and generate 
+            comprehensive notes tailored to your needs. Perfect for students who need to review large amounts 
+            of material quickly.
+          </p>
+        </div>
+      );
+    },
+  },
+  {
+    id: "object-detection",
+    category: "AI & Computer Vision",
+    title: "Object Detection AI",
+    src: "/assets/projects-screenshots/portfolio/landing.png",
+    screenshots: [],
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.tailwind,
+        PROJECT_SKILLS.js,
+      ],
+      backend: [
+        PROJECT_SKILLS.node,
+        PROJECT_SKILLS.python,
+        PROJECT_SKILLS.mongo,
+      ],
+    },
+    live: "",
+    github: "",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono text-2xl text-center mb-4">
+            Real-Time Object Detection Powered by AI 🤖👁️
+          </TypographyP>
+          <TypographyP className="font-mono">
+            A powerful object detection system using the COCO-SSD model to identify and classify objects 
+            in real-time from images or video streams. Built with the MERN stack and integrated 
+            with TensorFlow.js for browser-based AI inference.
+          </TypographyP>
+          {this.live && <ProjectsLinks live={this.live} repo={this.github} />}
+          
+          <TypographyH3 className="my-4 mt-8">Key Features</TypographyH3>
+          <ul className="list-disc ml-6 space-y-2">
+            <li className="font-mono">
+              <strong>COCO-SSD Model:</strong> Detects 80+ different object categories with high accuracy
+            </li>
+            <li className="font-mono">
+              <strong>Real-Time Detection:</strong> Process video streams and identify objects on the fly
+            </li>
+            <li className="font-mono">
+              <strong>Image Upload:</strong> Upload images and get instant object detection results
+            </li>
+            <li className="font-mono">
+              <strong>Bounding Boxes:</strong> Visual overlay showing detected objects with confidence scores
+            </li>
+            <li className="font-mono">
+              <strong>Webcam Integration:</strong> Use your device camera for live object detection
+            </li>
+            <li className="font-mono">
+              <strong>Detection History:</strong> Save and review past detection results
+            </li>
+          </ul>
+
+          <TypographyH3 className="my-4 mt-8">Technical Implementation</TypographyH3>
+          <p className="font-mono mb-4">
+            Leverages TensorFlow.js and the COCO-SSD pre-trained model to perform object detection 
+            entirely in the browser, ensuring fast performance and privacy (no data sent to servers).
+          </p>
+
+          <TypographyH3 className="my-4 mt-8">Use Cases</TypographyH3>
+          <ul className="list-disc ml-6 space-y-2">
+            <li className="font-mono">Educational demonstrations of computer vision</li>
+            <li className="font-mono">Image analysis and cataloging</li>
+            <li className="font-mono">Security and surveillance applications</li>
+            <li className="font-mono">Accessibility tools for visually impaired users</li>
+          </ul>
+        </div>
+      );
+    },
+  },
+  {
+    id: "framezy",
+    category: "E-Commerce Platform",
+    title: "Framezy",
+    src: "/assets/projects-screenshots/portfolio/landing.png",
+    screenshots: [],
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.tailwind,
+        PROJECT_SKILLS.js,
+      ],
+      backend: [
+        PROJECT_SKILLS.node,
+        PROJECT_SKILLS.express,
+        PROJECT_SKILLS.mongo,
+      ],
+    },
+    live: "",
+    github: "",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono text-2xl text-center mb-4">
+            Your College Essentials, One Click Away 🎓🛒
+          </TypographyP>
+          <TypographyP className="font-mono">
+            Framezy is an e-commerce platform tailored for college students, offering everything from 
+            posters and RTO copies to notebooks and project materials. Built with the MERN stack and 
+            integrated with Razorpay for seamless payments.
+          </TypographyP>
+          {this.live && <ProjectsLinks live={this.live} repo={this.github} />}
+          
+          <TypographyH3 className="my-4 mt-8">Key Features</TypographyH3>
+          <ul className="list-disc ml-6 space-y-2">
+            <li className="font-mono">
+              <strong>Product Catalog:</strong> Browse posters, notebooks, RTO copies, and project supplies
+            </li>
+            <li className="font-mono">
+              <strong>Shopping Cart:</strong> Add items, manage quantities, and proceed to checkout seamlessly
+            </li>
+            <li className="font-mono">
+              <strong>Razorpay Integration:</strong> Secure payment gateway for smooth transactions
+            </li>
+            <li className="font-mono">
+              <strong>Order Tracking:</strong> Real-time updates on order status and delivery
+            </li>
+            <li className="font-mono">
+              <strong>User Accounts:</strong> Save addresses, track order history, and manage wishlists
+            </li>
+            <li className="font-mono">
+              <strong>Admin Dashboard:</strong> Manage products, orders, and inventory with ease
+            </li>
+          </ul>
+
+          <TypographyH3 className="my-4 mt-8">Product Categories</TypographyH3>
+          <ul className="list-disc ml-6 space-y-2">
+            <li className="font-mono">📜 Posters (educational, motivational, decorative)</li>
+            <li className="font-mono">📓 Notebooks and stationery</li>
+            <li className="font-mono">📋 RTO copies and official documents</li>
+            <li className="font-mono">📚 Project materials and supplies</li>
+            <li className="font-mono">🎨 Custom printing services</li>
+          </ul>
+
+          <TypographyH3 className="my-4 mt-8">Why Framezy?</TypographyH3>
+          <p className="font-mono mb-4">
+            Built specifically for college students, Framezy understands your needs. Whether you're 
+            decorating your dorm, preparing for exams, or working on a project, we've got everything 
+            you need at student-friendly prices with fast delivery.
+          </p>
+        </div>
+      );
+    },
+  },
+  {
+    id: "minesweeper",
+    category: "Classic Game",
+    title: "Minesweeper Game",
+    src: "/assets/projects-screenshots/portfolio/landing.png",
+    screenshots: [],
     skills: {
       frontend: [
         PROJECT_SKILLS.js,
-        PROJECT_SKILLS.next,
-        PROJECT_SKILLS.chakra,
-        PROJECT_SKILLS.vue,
-      ],
-      backend: [
-        PROJECT_SKILLS.node,
-        PROJECT_SKILLS.express,
-        PROJECT_SKILLS.prisma,
-        PROJECT_SKILLS.postgres,
-        PROJECT_SKILLS.docker,
-      ],
-    },
-    get content(): JSX.Element {
-      return (
-        <div>
-          <TypographyP className="font-mono ">
-            CouponLuxury is your go-to destination for snagging the best deals
-            without lifting a finger. Whether you&apos;re hunting for the latest
-            discounts or trying to save a buck at your favorite stores,
-            CouponLuxury&apos;s got you covered.
-          </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
-          <p className="font-mono mb-2 mt-4">
-            As soon as you land, boom! You&apos;re greeted with the freshest
-            coupons and top-tier deals that&apos;ll make your wallet happy.
-          </p>
-          <SlideShow images={[`${BASE_PATH}/couponluxury/landing.png`]} />
-          <TypographyH3 className="my-4 ">Stores</TypographyH3>
-          <p className="font-mono mb-2">
-            Dive into a comprehensive list of stores, each packed with exclusive
-            deals and discounts. It&apos;s like having a VIP pass to every sale
-            in town.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/couponluxury/stores.png`,
-              `${BASE_PATH}/couponluxury/store.png`,
-            ]}
-          />
-          <TypographyH3 className="my-4 mt-8">Categories</TypographyH3>
-
-          <p className="font-mono mb-2">
-            Whatever you&apos;re into—fashion, tech, food—you&apos;ll find it
-            neatly organized here. No more endless scrolling; just pick a
-            category and get the best offers instantly.
-          </p>
-          <SlideShow images={[`${BASE_PATH}/couponluxury/categories.png`]} />
-          <TypographyH3 className="my-4 mt-8">Custom CMS </TypographyH3>
-          <p className="font-mono mb-2">
-            Powered by Vue.js, this bad boy allows us to keep the content
-            dynamic and up-to-date. From flash sales to limited-time offers, my
-            CMS ensures everything&apos;s live and relevant.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/couponluxury/cms-1.png`,
-              `${BASE_PATH}/couponluxury/cms-2.png`,
-            ]}
-          />
-          <p className="font-mono mb-2 mt-5">
-            Plus, I&apos;ve sprinkled in some extra magic like personalized
-            deal recommendations, user-friendly search features, and a sleek,
-            responsive design that works like a charm on any device.
-          </p>
-          <p className="font-mono mb-2">
-            CouponLuxury isn&apos;t just a website; it&apos;s your personal deal-hunting
-            assistant, ensuring you never miss out on a bargain!
-          </p>
-          {/* <TypographyP className="my-4 mt-8">
-          <strong>Misc:</strong>
-          Hosted not one, not two, but THREE coding contests (Codemacha) during
-          college. Safe to say, Coding Ducks passed the vibe check.
-        </TypographyP>
-        <TypographyP className="my-4 mt-8">
-          <strong>Target Audience:</strong>
-          For all the novice coders out there ready to make their mark.
-        </TypographyP> */}
-        </div>
-      );
-    },
-  },
-  {
-    id: "the-booking-desk",
-    category: "Travel",
-    title: "The Booking Desk",
-    src: "/assets/projects-screenshots/the-booking-desk/landing.png",
-    screenshots: ["1.png"],
-    live: "https://thebookingdesk.com/",
-    skills: {
-      frontend: [
-        PROJECT_SKILLS.ts,
-        PROJECT_SKILLS.next,
-        PROJECT_SKILLS.aceternity,
         PROJECT_SKILLS.tailwind,
       ],
-      backend: [PROJECT_SKILLS.sanity],
+      backend: [],
     },
+    live: "",
+    github: "",
     get content() {
       return (
         <div>
-          <TypographyP className="font-mono ">
-            The Booking Desk is your ultimate travel consultation hub, designed
-            to turn your wanderlust dreams into reality. With a focus on smooth
-            and visually captivating animations, navigating the site feels like
-            a breeze—it&apos;s almost as if the destinations are calling you.
+          <TypographyP className="font-mono text-2xl text-center mb-4">
+            The Classic Puzzle Game, Reimagined 💣🎮
           </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
-          <p className="font-mono mb-2 mt-8">
-            A sleek, modern interface greets you, featuring the latest travel
-            tips, deals, and must-visit spots around the globe.
-          </p>
-          <SlideShow images={[`${BASE_PATH}/the-booking-desk/landing.png`]} />
-          <TypographyH3 className="my-4 mt-8">Blogs</TypographyH3>
-          <p className="font-mono mb-2">
-            Dive into the curated articles written by travel experts. Whether
-            you&apos;re looking for hidden gems or travel hacks, our blog section has
-            you covered.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/the-booking-desk/blogs.png`,
-              `${BASE_PATH}/the-booking-desk/blog.png`,
-            ]}
-          />
-          <TypographyH3 className="my-4 mt-8">Sanity CMS</TypographyH3>
+          <TypographyP className="font-mono">
+            A modern take on the classic Minesweeper game built with vanilla JavaScript. 
+            Features smooth animations, multiple difficulty levels, and a clean, intuitive interface.
+          </TypographyP>
+          {this.live && <ProjectsLinks live={this.live} repo={this.github} />}
+          
+          <TypographyH3 className="my-4 mt-8">Key Features</TypographyH3>
+          <ul className="list-disc ml-6 space-y-2">
+            <li className="font-mono">
+              <strong>Multiple Difficulty Levels:</strong> Choose from Beginner, Intermediate, and Expert modes
+            </li>
+            <li className="font-mono">
+              <strong>Smooth Animations:</strong> Responsive interactions with satisfying visual feedback
+            </li>
+            <li className="font-mono">
+              <strong>Timer & Scoring:</strong> Track your time and compete for the best scores
+            </li>
+            <li className="font-mono">
+              <strong>Flag System:</strong> Right-click to flag suspected mines
+            </li>
+            <li className="font-mono">
+              <strong>Auto-Reveal:</strong> Click empty cells to auto-reveal safe adjacent cells
+            </li>
+            <li className="font-mono">
+              <strong>First-Click Safety:</strong> Never hit a mine on your first click
+            </li>
+          </ul>
 
-          <p className="font-mono mb-2">
-            Keeping everything fresh and up-to-date, I&apos;ve integrated Sanity CMS
-            to manage all the content with ease, ensuring you always get the
-            latest and greatest information.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/the-booking-desk/cms-1.png`,
-              `${BASE_PATH}/the-booking-desk/cms-2.png`,
-            ]}
-          />
-          <p className="font-mono mb-2 my-8">
-            With a stunning 100% score on Lighthouse, The Booking Desk isn&apos;t
-            just beautiful—it&apos;s built to perform. Whether you&apos;re planning your
-            next adventure or just daydreaming, our site delivers a top-notch
-            experience that&apos;s both informative and enjoyable.
+          <TypographyH3 className="my-4 mt-8">Game Mechanics</TypographyH3>
+          <ul className="list-disc ml-6 space-y-2">
+            <li className="font-mono">Clean grid layout with responsive design</li>
+            <li className="font-mono">Classic Minesweeper rules and logic</li>
+            <li className="font-mono">Keyboard shortcuts for faster gameplay</li>
+            <li className="font-mono">Local high scores and statistics tracking</li>
+          </ul>
+
+          <TypographyH3 className="my-4 mt-8">Built With</TypographyH3>
+          <p className="font-mono mb-4">
+            Developed using pure JavaScript, HTML, and CSS to demonstrate fundamental web development 
+            skills and game logic implementation. No frameworks needed – just clean, efficient code.
           </p>
         </div>
       );
@@ -496,203 +643,70 @@ const projects: Project[] = [
   },
   {
     id: "portfolio",
-    category: "Portfolio",
-    title: "My Portfolio",
+    category: "Personal Portfolio",
+    title: "3D Interactive Portfolio",
     src: "/assets/projects-screenshots/portfolio/landing.png",
-    screenshots: ["1.png"],
-    live: "http://rajgupta.vercel.app",
-    github:"https://github.com/0607rj/Portfolio",
+    screenshots: ["landing.png", "navbar.png", "projects.png", "skills.png", "project.png"],
     skills: {
       frontend: [
         PROJECT_SKILLS.ts,
         PROJECT_SKILLS.next,
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.tailwind,
         PROJECT_SKILLS.shadcn,
         PROJECT_SKILLS.aceternity,
-        PROJECT_SKILLS.framerMotion,
-        PROJECT_SKILLS.tailwind,
         PROJECT_SKILLS.spline,
+        PROJECT_SKILLS.gsap,
+        PROJECT_SKILLS.framerMotion,
       ],
-      backend: [],
+      backend: [
+        PROJECT_SKILLS.node,
+      ],
     },
+    live: "https://rajgupta.site",
+    github: "https://github.com/0607rj/3d-portfolio",
     get content() {
       return (
         <div>
-          <TypographyP className="font-mono ">
-            Welcome to my digital playground, where creativity meets code in the
-            dopest way possible.
+          <TypographyP className="font-mono text-2xl text-center mb-4">
+            An Immersive 3D Experience 🚀✨
+          </TypographyP>
+          <TypographyP className="font-mono">
+            This portfolio itself is a project! Built with cutting-edge technologies like Spline for 3D graphics, 
+            GSAP and Framer Motion for buttery-smooth animations, and Next.js 14 for blazing-fast performance.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <TypographyH3 className="my-4 mt-8">
-            Beautiful 3D Objects{" "}
-          </TypographyH3>
-          <p className="font-mono mb-2">
-            Did you see that 3D keyboard modal? Yeah! I made that. That
-            interactive keyboard is being rendered in 3D on a webpage 🤯, and
-            pressing each keycap reveals a skill in a goofy way. It&apos;s like
-            typing, but make it art.
-          </p>
+          
+          <TypographyH3 className="my-4 mt-8">Standout Features</TypographyH3>
+          <ul className="list-disc ml-6 space-y-2">
+            <li className="font-mono">
+              <strong>3D Interactive Keyboard:</strong> Each keycap represents a skill with hover interactions
+            </li>
+            <li className="font-mono">
+              <strong>Space Theme:</strong> Floating particles and cosmic aesthetics
+            </li>
+            <li className="font-mono">
+              <strong>Buttery Animations:</strong> Scroll-triggered animations powered by GSAP
+            </li>
+            <li className="font-mono">
+              <strong>Dark/Light Mode:</strong> Seamless theme switching with cheeky disclaimers
+            </li>
+            <li className="font-mono">
+              <strong>Contact Form:</strong> Integrated email delivery via Resend API
+            </li>
+            <li className="font-mono">
+              <strong>Fully Responsive:</strong> Looks stunning on all devices
+            </li>
+          </ul>
+
           <SlideShow
             images={[
               `${BASE_PATH}/portfolio/landing.png`,
+              `${BASE_PATH}/portfolio/navbar.png`,
+              `${BASE_PATH}/portfolio/projects.png`,
               `${BASE_PATH}/portfolio/skills.png`,
             ]}
           />
-          <TypographyH3 className="my-4 ">Space Theme</TypographyH3>
-          <p className="font-mono mb-2">
-            Dark background + floating particles = out-of-this-world cool.
-          </p>
-          <SlideShow images={[`${BASE_PATH}/portfolio/navbar.png`]} />
-          <TypographyH3 className="my-4 mt-8">Projects</TypographyH3>
-
-          <p className="font-mono mb-2">
-            My top personal and freelance projects — no filler, all killer.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/portfolio/projects.png`,
-              `${BASE_PATH}/portfolio/project.png`,
-            ]}
-          />
-          <p className="font-mono mb-2 mt-8 text-center">
-            This site&apos;s not just a portfolio — it&apos;s a whole vibe.
-          </p>
-        </div>
-      );
-    },
-  },
-  {
-    id: "ghostchat",
-    category: "Anonymous chat",
-    title: "GhostChat",
-    src: "/assets/projects-screenshots/ghostchat/1.png",
-    screenshots: ["1.png", "2.png", "3.png", "4.png"],
-    live: "https://ghostchat.vercel.app",
-    github:"https://github.com/0607rj/GhostChat",
-    skills: {
-      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.chakra],
-      backend: [PROJECT_SKILLS.supabase],
-    },
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono ">
-            Ghostchat is your go-to spot for sending anonymous messages without
-            leaving a trace. Powered by Supabase, it&apos;s all about keeping things
-            low-key and secure. Whether you&apos;re sharing secrets, giving feedback,
-            or just having some fun, Ghostchat ensures your identity stays
-            hidden, while your voice is heard. Say what you want, without the
-            worry.
-          </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
-          <SlideShow
-            images={[
-              `${BASE_PATH}/ghostchat/1.png`,
-              `${BASE_PATH}/ghostchat/2.png`,
-              `${BASE_PATH}/ghostchat/3.png`,
-              `${BASE_PATH}/ghostchat/4.png`,
-            ]}
-          />
-        </div>
-      );
-    },
-  },
-  {
-    id: "jra",
-    category: "Result analyzer",
-    title: "JNTUA Results Analyzer",
-    src: "/assets/projects-screenshots/jra/1.png",
-    screenshots: ["1.png"],
-    live: "https://0607rj.github.io/JNTUA-result-analyser-spa/#/",
-    skills: {
-      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.vue],
-      backend: [
-        PROJECT_SKILLS.node,
-        PROJECT_SKILLS.mongo,
-        PROJECT_SKILLS.express,
-        PROJECT_SKILLS.docker,
-      ],
-    },
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono ">
-            JNTUA Results Analyzer was a revolutionary tool designed to simplify
-            and enhance the experience of accessing academic results. It served
-            as a powerful proxy between the JNTUA university results website and
-            its users, offering a range of features that made result analysis
-            faster and more efficient. Here&apos;s what made it stand out:
-          </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
-          <SlideShow images={[`${BASE_PATH}/jra/1.png`]} />
-          <TypographyH3 className="my-4 mt-8">
-            Effortless Results Retrieval
-          </TypographyH3>
-          {/* Effortless Results Retrieval: */}
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              Search all your results using a single roll number, eliminating
-              the tedious task of sifting through thousands of rows on the
-              official site.
-            </li>
-          </ul>
-          <TypographyH3 className="my-4 mt-8">Class-Wise Results:</TypographyH3>
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              class-wise results effortlessly by entering a roll number range.
-              No more manual searches or filtering.
-            </li>
-          </ul>
-          <TypographyH3 className="my-4 mt-8">Faculty Features:</TypographyH3>
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              Faculty members could download batch results in Excel format,
-              making administrative tasks a breeze.
-            </li>
-          </ul>
-          <TypographyH3 className="my-4 mt-8">
-            Enhanced Data Insights:
-          </TypographyH3>
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              Each result came with additional features including:
-              <ul className="list-disc font-mono ml-6">
-                <li>
-                  <strong>CGPA Calculations: </strong>Easily track your
-                  cumulative grade point average.
-                </li>
-                <li>
-                  <strong>Charts:</strong> Visualize your academic performance
-                  with comprehensive charts.
-                </li>
-                <li>
-                  <strong>Future Projections:</strong> Get insights into
-                  potential future outcomes based on current performance.
-                </li>
-                <li>
-                  <strong> Backlog Counts: </strong>Keep track of your backlog
-                  subjects at a glance.
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <TypographyH3 className="my-4 mt-8">Performance:</TypographyH3>
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              The application was significantly faster and more efficient than
-              the official site, providing a smoother user experience.
-            </li>
-          </ul>
-          <TypographyH3 className="my-4 mt-8">Downfall:</TypographyH3>
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              Unfortunately, as of May 2022, the tool stopped working due to the
-              introduction of CAPTCHA on the official JNTUA results site, which
-              disrupted the seamless functionality of the app. JNTUA Results
-              Analyzer transformed the way students and faculty interacted with
-              academic results, making it a must-have tool until its unexpected
-              shutdown.
-            </li>
-          </ul>
         </div>
       );
     },
