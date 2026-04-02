@@ -45,19 +45,13 @@ const inter = Inter({
   variable: "--font-sans",
 });
 
-const archivoBlack = Archivo_Black({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-display",
-});
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${archivoBlack.variable} font-display`} suppressHydrationWarning>
+    <html lang="en" className={`${inter.variable} font-sans`} suppressHydrationWarning>
       <head>
         <Script
           defer

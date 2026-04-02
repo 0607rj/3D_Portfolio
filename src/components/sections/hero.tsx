@@ -36,8 +36,8 @@ const HeroSection = () => {
                 <BlurIn delay={0.7}>
                   <p
                     className={cn(
-                      "md:self-start mt-4 font-thin text-md text-slate-500 dark:text-zinc-400",
-                      "cursor-default font-display sm:text-xl md:text-xl whitespace-nowrap bg-clip-text "
+                      "md:self-start mt-4 font-medium text-md text-slate-500 dark:text-zinc-400",
+                      "cursor-default font-sans sm:text-xl md:text-xl whitespace-nowrap bg-clip-text "
                     )}
                   >
                     Hi, I am
@@ -50,13 +50,13 @@ const HeroSection = () => {
                     <TooltipTrigger asChild>
                       <h1
                         className={cn(
-                          "-ml-[6px] leading-none font-thin text-transparent text-slate-800 text-left",
-                          "font-thin text-7xl md:text-7xl lg:text-8xl xl:text-9xl",
-                          "cursor-default text-edge-outline font-display "
+                          "-ml-[6px] leading-[0.9] font-semibold text-transparent text-slate-800 text-left uppercase tracking-tight",
+                          "text-7xl md:text-8xl lg:text-9xl xl:text-9xl",
+                          "cursor-default text-edge-outline font-sans "
                         )}
                       >
                         {config.author.split(" ")[0]}
-                        <br className="md:block hiidden" />
+                        <br className="md:block hidden" />
                         {config.author.split(" ")[1]}
                       </h1>
                     </TooltipTrigger>
@@ -72,11 +72,11 @@ const HeroSection = () => {
                 <BlurIn delay={1.2}>
                   <p
                     className={cn(
-                      "md:self-start md:mt-4 font-thin text-md text-slate-500 dark:text-zinc-400",
-                      "cursor-default font-display sm:text-xl md:text-xl whitespace-nowrap bg-clip-text "
+                      "md:self-start md:mt-6 font-medium text-md text-slate-400 dark:text-zinc-500 uppercase tracking-widest",
+                      "cursor-default font-sans sm:text-lg md:text-lg whitespace-nowrap bg-clip-text "
                     )}
                   >
-                    A Full Stack Web Developer
+                    Full Stack Web Developer
                   </p>
                 </BlurIn>
               </div>
