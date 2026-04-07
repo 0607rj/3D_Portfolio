@@ -4,7 +4,7 @@
 
 A modern, jaw-dropping developer portfolio packed with interactive 3D animations, buttery smooth transitions, and a cosmic visual experience. Built by **Raj Gupta**, a full-stack developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects.
 
-**🌐 Live Site:** [https://rajgupta.site](https://rajgupta.site)
+**🌐 Live Site:** [https://rajportfolio06.netlify.app](https://rajportfolio06.netlify.app)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/0607rj/3d-portfolio)
 
