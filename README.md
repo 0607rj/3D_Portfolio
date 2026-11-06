@@ -19,7 +19,7 @@ I'm **Raj Gupta**, a passionate full-stack developer and creative technologist. 
 - 🎨 Interactive web experiences with seamless animations
 - 🌌 3D web applications using cutting-edge technologies
 - 💼 Full-stack solutions from concept to deployment
-- 🚀 Innovative projects like Coding Ducks, The Booking Desk, and Ghostchat
+- 🚀 Projects like TalentBridge, NoteForge AI and The Manuscript
 
 **Let's build something amazing together!**
 
@@ -27,7 +27,7 @@ I'm **Raj Gupta**, a passionate full-stack developer and creative technologist. 
 
 **Connect with me:**
 - 🐦 Twitter/X: [@0607rj](https://x.com/0607rj)
-- 💼 LinkedIn: [Raj Gupta](https://www.linkedin.com/in/raj-gupta-0607rj/)
+- 💼 LinkedIn: [Raj Gupta](https://www.linkedin.com/in/0607rj/)
 - 📷 Instagram: [@0607rj](https://www.instagram.com/0607rj)
 - 👨‍💻 GitHub: [@0607rj](https://github.com/0607rj)
 - 👤 Facebook: [Raj Gupta](https://www.facebook.com/raj.gupta.0607)
@@ -184,7 +184,7 @@ const config = {
 
   social: {
     twitter: "https://x.com/0607rj",
-    linkedin: "https://www.linkedin.com/in/raj-gupta-0607rj/",
+    linkedin: "https://www.linkedin.com/in/0607rj/",
     instagram: "https://www.instagram.com/0607rj",
     facebook: "https://www.facebook.com/raj.gupta.0607",
     github: "https://github.com/0607rj",
